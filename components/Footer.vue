@@ -14,7 +14,9 @@
 
       <v-col cols="12" sm="4" order="2" class="mb-5">
         <p class="text-h5">Contact</p>
-        <div class="text-body-1 mb-1" v-html="getSiteContent.contact"></div>
+        <div class="text-body-1 mb-1" >
+          <p>Victoria.leonard@outlook.com or David.Natal@rhul.ac.uk </p>
+        </div>
 
 
       </v-col>
@@ -89,7 +91,7 @@ export default {
     };
   },
   computed: {
-    ...mapGetters('app', ['getSiteContent'])
+    ...mapGetters('app', [])
   }
 };
 </script>

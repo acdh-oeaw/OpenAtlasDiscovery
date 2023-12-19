@@ -52,7 +52,9 @@
               </div>
             </div>
         </div>
-        <p class="text-body-1 intro text-center" v-html="getSiteContent.intro"></p>
+        <p class="text-body-1 intro text-center">
+          The CONNEC database features four letter collections (386-603 CE), including Augustine, Paulinus, Avitus, and Gregory. The database foregrounds their spatial worlds and social connections. It contains letters, actors and groups, and locations.
+        </p>
 
       </div>
     </div>
@@ -72,9 +74,7 @@ export default {
   components: { EventMap },
 
   computed: {
-    ...mapGetters('app', [
-      'getSiteContent'
-    ]),
+    ...mapGetters('app', []),
   },
   methods: {
     scrollTopMap() {

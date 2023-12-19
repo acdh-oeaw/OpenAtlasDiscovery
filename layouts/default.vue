@@ -62,19 +62,16 @@ export default {
       title: '',
     };
   },
-async mounted(){
-  const p = await this.$api.Content.get_api_0_3_content_();
-  this.setSiteContent(p.body);
+  async mounted() {
   await this.loadTypeTree();
 },
   methods: {
     ...mapMutations('app', [
       'setGeoItems',
       'setTempItems',
-      'setSiteContent',
     ]),
     ...mapActions('data',['loadTypeTree']),
-    ...mapActions('app',['setSiteContent']),
+    ...mapActions('app', []),
   },
 };
 </script>

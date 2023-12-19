@@ -6,7 +6,6 @@ import config from '../assets/config.json';
 
 /* eslint-disable no-param-reassign,no-shadow */
 export const state = () => ({
-  siteContent: '',
   menuitems,
   classes,
   tableheaders,
@@ -19,7 +18,6 @@ export const state = () => ({
 
 export const getters = {
   getDefaultAuthor: (s) => s.config?.defaultAuthor || '',
-  getSiteContent: (s) => s.siteContent,
   getIconBySystemClass: (s) => (c) => s.classes.find((item) => item.systemClass === c)?.icon,
   getLabelBySystemClass: (s) => ({ c, l }) => s.classes.find((item) => item.systemClass === c)?.[l],
   getCRMClassBySystemClass: (s) => (c) => s.classes.find((item) => item.systemClass === c)?.crmClass,
@@ -50,9 +48,6 @@ export const getters = {
 };
 
 export const mutations = {
-  setSiteContent(state, content) {
-    state.siteContent = content;
-  },
   setGeoItems(state, items) {
     state.geoItems = items;
   },
@@ -62,7 +57,4 @@ export const mutations = {
 };
 
 export const actions = {
-  setSiteContent({commit}, content) {
-    commit('setSiteContent',content);
-  },
 };
