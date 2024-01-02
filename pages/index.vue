@@ -42,13 +42,13 @@
                   </div>
                 </nuxt-link>
 
-                <nuxt-link style="--i:7; --circle-col:#8e1a41;" to="/methodology"
+                <!-- <nuxt-link style="--i:7; --circle-col:#8e1a41;" to="/methodology"
                            class="bubble-btn d-flex">
                   <div class="d-flex align-center bubble-btn-content text-no-wrap">
                     <div class="circle d-inline-block mr-2"></div>
                     <span>Methodology</span>
                   </div>
-                </nuxt-link>
+                </nuxt-link> -->
               </div>
             </div>
         </div>
