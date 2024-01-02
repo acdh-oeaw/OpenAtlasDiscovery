@@ -9,13 +9,13 @@
 
             <div class="d-flex align-center justify-center">
               <div class="navigation-btns" style="position:relative;" :class="{'rotate':!$vuetify.breakpoint.smAndDown}">
-                <nuxt-link  style="--i:3; --circle-col:#4fb548;" to="/userguide"
+                <!-- <nuxt-link  style="--i:3; --circle-col:#4fb548;" to="/userguide"
                      class="bubble-btn d-flex">
                   <div class="d-flex align-center bubble-btn-content text-no-wrap">
                     <div class="circle d-inline-block mr-2"></div>
                     <span>User Guide</span>
                   </div>
-                </nuxt-link>
+                </nuxt-link> -->
 
 
                 <nuxt-link style="--i:4; --circle-col:#f05a39;" to="/map"
