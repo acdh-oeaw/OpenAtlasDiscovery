@@ -3,7 +3,7 @@
   "info": {
     "title": "OpenAtlas Api",
     "description": "This is the unstable version of the OpenAtlas API",
-    "termsOfService": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html",
+    "termsOfService": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html"
   },
   "servers": [
     {
