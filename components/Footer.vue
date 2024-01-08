@@ -33,12 +33,12 @@
         <p class="ma-1 pa-0">
           <nuxt-link to="/casestudies">Case Studies</nuxt-link>
         </p>
-        <p class="ma-1 pa-0">
+        <!-- <p class="ma-1 pa-0">
           <nuxt-link to="/methodology">Methodology</nuxt-link>
-        </p>
-        <p class="ma-1 pa-0">
+        </p> -->
+        <!-- <p class="ma-1 pa-0">
           <nuxt-link to="/userguide">User Guide</nuxt-link>
-        </p>
+        </p> -->
 
 
       </v-col>
