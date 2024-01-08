@@ -185,7 +185,7 @@ export default {
   watch: {
     async dialog() {
       if (this.dialog && !this.loaded) {
-        const p = await this.$api.Entities.get_api_0_3_entity__id__({
+        const p = await this.$api.Entities.get_api_entity__id__({
           id_: this.event.relationTo.split('/')
             .pop(),
         });
@@ -195,7 +195,7 @@ export default {
     async eventDetail() {
       const lFrom = this.eventDetail?.relations.find((x) => x.relationType === 'crm:P27 moved from');
       if (!!lFrom) {
-        const f = await this.$api.Entities.get_api_0_3_entity__id__({
+        const f = await this.$api.Entities.get_api_entity__id__({
           id_: lFrom?.relationTo.split('/')
             .pop(),
         });
@@ -203,7 +203,7 @@ export default {
       }
       const lTo = this.eventDetail?.relations.find((x) => x.relationType === 'crm:P26 moved to');
       if (!!lTo) {
-        const t = await this.$api.Entities.get_api_0_3_entity__id__({
+        const t = await this.$api.Entities.get_api_entity__id__({
           id_: lTo?.relationTo.split('/')
             .pop(),
         });
@@ -212,7 +212,7 @@ export default {
 
       const artifact = this.eventDetail?.relations.find((x) => x.relationType === "crm:P25 moved");
       if (!!artifact) {
-        const a = await this.$api.Entities.get_api_0_3_entity__id__({
+        const a = await this.$api.Entities.get_api_entity__id__({
           id_: artifact?.relationTo.split('/')
             .pop(),
         });
@@ -221,7 +221,7 @@ export default {
 
       const source = this.artifact?.relations.find((x) => x.relationType === "crm:P128 carries");
       if (!!source) {
-        const s = await this.$api.Entities.get_api_0_3_entity__id__({
+        const s = await this.$api.Entities.get_api_entity__id__({
           id_: source?.relationTo.split('/')
             .pop(),
         });

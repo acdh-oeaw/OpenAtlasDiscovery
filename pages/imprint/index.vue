@@ -69,7 +69,7 @@ export default {
   name: 'index',
   async fetch() {
     // eslint-disable-next-line no-underscore-dangle
-    const p = await this.$api.Content.get_api_0_3_content_();
+    const p = await this.$api.Content.get_api_content_();
     // eslint-disable-next-line prefer-destructuring
     this.legalNotice = p.body.legalNotice;
   },

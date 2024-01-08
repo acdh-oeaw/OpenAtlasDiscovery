@@ -19,7 +19,7 @@ Vue.use(APIClient);
 export const loadAllFromCidocClass = async(viewClass, show,limit,relationType = []) => {
   console.time(`load ${viewClass}`);
 
-  const p = await Vue.prototype.$api.Entities.get_api_0_3_query_({
+  const p = await Vue.prototype.$api.Entities.get_api_query_({
     limit,
     view_classes: viewClass,
     show: show,
@@ -32,7 +32,7 @@ export const loadAllFromCidocClass = async(viewClass, show,limit,relationType = 
 
   for (let i = 2; i <= p.body.pagination.totalPages; i++) {
     const promise = {
-      func: Vue.prototype.$api.Entities.get_api_0_3_query_,
+      func: Vue.prototype.$api.Entities.get_api_query_,
       arg: {
         limit,
         view_classes: viewClass,

@@ -61,7 +61,7 @@ export const mutations = {
 export const actions = {
   async loadTypeTree({ commit }) {
 
-    const g = await Vue.prototype.$api.Nodes.get_api_0_3_type_tree_();
+    const g = await Vue.prototype.$api.Nodes.get_api_type_tree_();
     const eventTypes = Object.values(g.body.typeTree)
       .filter(x => x.root.includes(27));
 
@@ -97,7 +97,7 @@ export const actions = {
   },
   async loadGeoItems({ commit }) {
 
-    const places = await Vue.prototype.$api.Content.get_api_0_3_geometric_entities_();
+    const places = await Vue.prototype.$api.Content.get_api_geometric_entities_();
     const newplaces = places.body.features.reduce((dict,current) => {
       return{...dict, [current.properties.locationId]:current}
     },{})

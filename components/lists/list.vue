@@ -90,7 +90,7 @@ export default {
     };
     // eslint-disable-next-line no-underscore-dangle
     try {
-      const p = await this.$api.Entities.get_api_0_3_query_(query);
+      const p = await this.$api.Entities.get_api_query_(query);
       this.items = p.body.results;
       this.itemIndex = p.body.pagination.index;
       this.totalItems = p.body.pagination.entities;

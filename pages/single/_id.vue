@@ -249,7 +249,7 @@ export default {
   async fetch() {
     this.loading = true;
     // eslint-disable-next-line no-underscore-dangle
-    const p = await this.$api.Entities.get_api_0_3_entity__id__({
+    const p = await this.$api.Entities.get_api_entity__id__({
       id_: this.$route.params.id,
     });
     // eslint-disable-next-line prefer-destructuring
@@ -322,7 +322,7 @@ export default {
     async fetchRelated(relations, type) {
       return Promise.all(relations.filter((r) => r.relationSystemClass === type)
         .map(async (element) => {
-          const ri = await this.$api.Entities.get_api_0_3_entity__id__({
+          const ri = await this.$api.Entities.get_api_entity__id__({
             id_: element.relationTo.split('/')
               .pop(),
           });

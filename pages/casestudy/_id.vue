@@ -25,7 +25,7 @@ export default {
   async fetch() {
     this.loading = true;
     // eslint-disable-next-line no-underscore-dangle
-    const p = await this.$api.Entities.get_api_0_3_entity__id__({
+    const p = await this.$api.Entities.get_api_entity__id__({
       id_: this.$route.params.id,
     });
     // eslint-disable-next-line prefer-destructuring
